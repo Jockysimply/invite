@@ -7,7 +7,7 @@
 <!-- WeChat Share Card (Open Graph) -->
 <meta property="og:title" content="吴玥 ❤ 周少辰婚礼请柬" />
 <meta property="og:description" content="嘉礼将成，良期已定。两姓既合，百年有约。谨以是日，行婚姻之仪。静候君至。" />
-<meta property="og:image" content="20260415-211014.jpg" />
+<meta property="og:image" content="https://jockysimply.github.io/wedding-invite/20260415-211014.jpg" />
 <meta property="og:type" content="website" />
 
 <title>吴玥 ❤ 周少辰婚礼请柬</title>
@@ -61,11 +61,42 @@ h1{
     border:0;
     border-radius:12px;
 }
+
+/* 地图下方双按钮 */
+.map-actions{
+    margin-top:12px;
+    display:flex;
+    gap:10px;
+}
+.map-btn{
+    flex:1;
+    display:inline-block;
+    text-align:center;
+    text-decoration:none;
+    color:#fff;
+    border-radius:10px;
+    height:40px;
+    line-height:40px;
+    font-size:14px;
+}
+.map-btn.tencent{
+    background:#12b7f5;
+}
+.map-btn.amap{
+    background:#00b578;
+}
+
 .footer{
     text-align:center;
     margin-top:18px;
     font-size:14px;
     color:#888;
+}
+
+@media (max-width:520px){
+    .map-actions{
+        flex-direction:column;
+    }
 }
 </style>
 </head>
@@ -103,6 +134,22 @@ h1{
       <iframe
         src="https://apis.map.qq.com/uri/v1/marker?marker=coord:37.87812,112.5635;title:兰博泰尔酒店;addr:山西省太原市杏花岭区府西街103号&referer=myapp">
       </iframe>
+    </div>
+
+    <div class="map-actions">
+      <a
+        class="map-btn tencent"
+        href="https://apis.map.qq.com/uri/v1/marker?marker=coord:37.87812,112.5635;title:%E5%85%B0%E5%8D%9A%E6%B3%B0%E5%B0%94%E9%85%92%E5%BA%97;addr:%E5%B1%B1%E8%A5%BF%E7%9C%81%E5%A4%AA%E5%8E%9F%E5%B8%82%E6%9D%8F%E8%8A%B1%E5%B2%AD%E5%8C%BA%E5%BA%9C%E8%A5%BF%E8%A1%97103%E5%8F%B7&referer=myapp"
+        target="_blank"
+        rel="noopener"
+      >腾讯地图导航</a>
+
+      <a
+        class="map-btn amap"
+        href="https://uri.amap.com/marker?position=112.5635,37.87812&name=%E5%85%B0%E5%8D%9A%E6%B3%B0%E5%B0%94%E9%85%92%E5%BA%97&src=weddinginvite&coordinate=gaode"
+        target="_blank"
+        rel="noopener"
+      >高德地图导航</a>
     </div>
 
     <div class="footer">
